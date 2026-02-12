@@ -56,8 +56,8 @@ jobs:
           tags: |
             euclidesduarte5/django_todolist:latest
             euclidesduarte5/django_todolist:${{ github.event.release.tag_name }}
-          cache-from: type=registry,ref=zeguimoko/django_todolist:buildcache
-          cache-to: type=registry,ref=zeguimoko/django_todolist:buildcache,mode=max
+          cache-from: type=registry,ref=euclidesduarte5/django_todolist:buildcache
+          cache-to: type=registry,ref=euclidesduarte5/django_todolist:buildcache,mode=max
     
     
   
